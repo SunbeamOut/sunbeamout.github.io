@@ -1,6 +1,6 @@
 /* ===== RESET & BASE ===== */
 :root {
-    --bg: #000000;
+    --bg: #070707;
     --bg-alt: #0a0a0a;
     --card: #0d0d0d;
     --card-hover: #111111;
@@ -60,7 +60,7 @@ main, header, footer {
 
 /* ===== HERO ===== */
 .hero {
-    padding: 120px 24px 100px;
+    padding: 50px 24px 45px;
     text-align: center;
     position: relative;
 }
