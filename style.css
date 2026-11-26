@@ -68,13 +68,12 @@ main, header, footer {
 .hero::after {
     content: '';
     position: absolute;
-    bottom: 0;
+    bottom: 20px;
     left: 50%;
     transform: translateX(-50%);
     width: 400px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
-    opacity: 0.3;
+    background: linear-gradient(90deg, transparent, var(--accent-bright), transparent);
 }
 
 .hero-name {
@@ -114,6 +113,14 @@ main, header, footer {
     font-family: 'Cinzel', serif;
     letter-spacing: 4px;
     text-transform: uppercase;
+}
+
+.hero .btn {
+    margin-top: 40px;
+    margin-bottom: 30px;
+    padding-left: 70px;
+    padding-right: 70px;
+    font-size: 1rem;
 }
 
 /* ===== NAV ===== */
@@ -186,7 +193,7 @@ h2::after {
     transform: translateX(-50%);
     width: 80px;
     height: 1px;
-    background: linear-gradient(90deg, transparent, var(--accent), transparent);
+    background: linear-gradient(90deg, transparent, var(--accent-bright), transparent);
 }
 
 /* ===== FADE-IN ANIMATION ===== */
@@ -347,11 +354,38 @@ h2::after {
     letter-spacing: 1px;
 }
 
+.game-card-role {
+    margin-top: -8px;
+    color: var(--accent-bright);
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    letter-spacing: 0.5px;
+}
+
 .game-card-desc {
     color: var(--text);
     font-size: 0.85rem;
     line-height: 1.7;
     text-align: justify;
+}
+
+.game-card-contribution h4 {
+    margin-bottom: 6px;
+    color: var(--text-bright);
+    font-family: 'Cinzel', serif;
+    font-size: 0.75rem;
+    font-weight: 600;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.game-card-contribution ul {
+    display: grid;
+    gap: 6px;
+    padding-left: 18px;
+    color: var(--text);
+    font-size: 0.8rem;
+    line-height: 1.65;
 }
 
 /* ===== BUTTONS (GLASSMORPHISM) ===== */
@@ -432,7 +466,7 @@ h2::after {
     left: 0;
     width: 2px;
     height: 100%;
-    background: linear-gradient(to bottom, var(--accent), transparent);
+    background: linear-gradient(to bottom, var(--accent-bright), transparent);
     opacity: 0.4;
 }
 
